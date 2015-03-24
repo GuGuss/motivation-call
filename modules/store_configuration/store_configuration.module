@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Store Configuration feature.
+ */
+
+include_once 'store_configuration.features.inc';

@@ -1,0 +1,10 @@
+name = Motivation Call Migrate
+description = Content migration.
+core = 7.x
+
+dependencies[] = migrate
+dependencies[] = migrate_extras
+dependencies[] = commerce_migrate
+
+files[] = motivation_call_migrate.migrate.inc
+files[] = includes/product.inc

@@ -34,10 +34,11 @@ mounts:
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
-    # We run deploy hook after your application has been deployed and started.
     deploy: |
       cd public
-      drush -y updatedb
+      drush site-install motivation_call -y --account-pass=admin --site-name="Motivation Call Store"
+      drush migrate-status
+      drush migrate-import --all
 
 # The configuration of scheduled execution.
 crons:
